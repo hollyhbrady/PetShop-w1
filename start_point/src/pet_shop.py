@@ -68,4 +68,6 @@ def remove_pet_by_name(pet_shop, name):
 
 # I had del(pet) as my last line - why does that not work? if the last function works?
 
-def add_pet_
+def add_pet_to_stock(pet_shop, new_pet):
+    pet_shop["pets"].append(new_pet)
+
