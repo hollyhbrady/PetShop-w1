@@ -27,7 +27,41 @@ def get_stock_count(pet_shop):
 def get_pets_by_breed(pet_shop, breed):
     breed_count = []
     for pet in pet_shop["pets"]:
-        if "breed" == breed
-        breed_count.append
+        if pet["breed"] == breed:
+            breed_count.append("breed")
+    return breed_count
 
+def find_pet_by_name(pet_shop, name):
+    for pet in pet_shop["pets"]:
+        if pet["name"] == name:
+            return pet
 
+    # ^^ Help from Kieran to get this from below
+
+    # def find_pet_by_name(pet_shop, name):
+    #     name_list = []
+    #     for pet in pet_shop["pets"]:
+    #         if pet["name"] == name:
+    #             name_list.append("name")
+    #     return name_list
+
+    # ("name" == name) in pet_shop["pets"]
+    # if False:
+    #     return None # This one works for .assertIsNone line 130
+
+    # ("name" == name) in pet_shop["pets"] #False is not none
+    # if True:
+    #     return pet_shop["pets"]["name"]
+    # else: 
+    #     return None    
+
+    # return pet_shop(["pets"]["name"] == name)
+#   go through the list of pets 
+#   find the one with name of Arthur
+
+# find specified pet and delete them from the list
+
+def remove_pet_by_name(pet_shop, name):
+    for pet in pet_shop["pets"]:
+        if pet["name"] == name:
+            
