@@ -96,6 +96,8 @@ def get_customer_pet_count(customers):
     # customers["pets"].append(pet_count)
     # return pet_count
 
+    #logic behind trying this was create a var and then add to it if there was a result in customers pets. Looking back on it, i dont know why I did that.
+
     return len(customers["pets"])
 
 # I asked Lina for help on hte next one and she told me this one was wrong and to use len
