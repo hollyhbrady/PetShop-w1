@@ -73,3 +73,8 @@ def add_pet_to_stock(pet_shop, new_pet):
 
 def get_customer_cash(customers):
     return customers["cash"]
+    # doesnt this just look at the cash of the first customer?
+
+def remove_customer_cash(customers, value):
+    customers["cash"] -= value
+    return customers["cash"]
