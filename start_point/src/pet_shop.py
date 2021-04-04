@@ -78,9 +78,15 @@ def get_customer_cash(customers):
 
 def remove_customer_cash(customers, value):
     customers["cash"] -= value
-    return customers["cash"]
+    # return customers["cash"] - realised I didnt need this return
 
 def get_customer_pet_count(customers):
     pet_count = 0
     customers["pets"].append(pet_count)
     return pet_count
+
+def add_pet_to_customer(customers, new_pet):
+    customers["pets"].append(new_pet)
+    return get_customer_pet_count
+    
+
